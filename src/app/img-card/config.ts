@@ -1,0 +1,1 @@
+export let HOST_URL: string = 'http://dev.ftv10.embla.no/Client/assets/images/small-sized/';
