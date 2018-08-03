@@ -1,17 +1,9 @@
 <mat-card>
   <mat-card-actions>
-    <button 
-      color="{{ button.color }}" 
-      (click)="generateSrc()" 
-      disabled="{{ button.disabled }}"
-      mat-button 
+    <button [disabled]='true' color="{{ button.color }}" (click)="generateSrc()" disabled="{{ button.disabled }}" mat-button
       mat-raised-button>
       {{ button.text }}
     </button>
   </mat-card-actions>
-  <img 
-    src="{{ src }}" 
-    alt="Embla Extended Family"
-    mat-card-image>
+  <img *ngFor="let item of imageList" src="{{ item.url }}" alt="Embla Extended Family" mat-card-image>
 </mat-card>
-  
